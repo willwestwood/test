@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="javascript.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<header>
+		<p id="title">WattWaste: Example Hardware</p>
+		<hr>
+	</header>
+    <body>
+        <div id="devices">
+        	<div id="device1" class="device">
+        		<img src="res/tv.png" class="image"></img>
+                <img src="res/tvon.gif" id="static"></img>
+        		<div id="led1" class="led"/>
+        		<p id="label1" class="label">TV</p>
+                <input id="slider1" class="slider" type="range" id="myRange" step="0.01" value="90" onmousemove="moveSlider(1)"/>
+                <input id="textbox1" class="textbox" type="text" readonly/>
+        	</div>
+
+        	<div id="device2" class="device">
+        		<img src="res/box.gif" class="image"/>
+                <div id="playColour"></div>
+                <div id="pauseColour"></div>
+        		<div id="led2" class="led"/>
+        		<p id="label2" class="label">TV Box</p>
+                <input id="slider2" class="slider" type="range" id="myRange" step="0.01" value="3" onmousemove="moveSlider(2)"/>
+                <input id="textbox2" class="textbox" type="text" readonly/>
+        	</div>
+
+        	<div id="device3" class="device">
+        		<img src="res/speakers.png" class="image"/>
+                <audio id="audio">
+                  <source src="res/tone.mp3" type="audio/mpeg">
+                </audio>
+        		<div id="led3" class="led"/>
+        		<p id="label3" class="label">Speakers</p>
+                <input id="slider3" class="slider" type="range" id="myRange" step="0.01" value="60" onmousemove="moveSlider(3)"/>
+                <input id="textbox3" class="textbox" type="text" readonly/>
+        	</div>
+
+        	<div id="device4" class="device">
+        		<img src="res/lampOff.gif" class="image" id="lamp"/>
+                <img src="res/light.png" id="light"/>
+        		<div id="led4" class="led"/>
+        		<p id="label4" class="label">Lamp</p>
+                <input id="slider4" class="slider" type="range" id="myRange" step="0.01" value="45" onmousemove="moveSlider(4)"/>
+                <input id="textbox4" class="textbox" type="text" readonly/>
+        	</div>
+        </div>
+    </body>
+</html>
